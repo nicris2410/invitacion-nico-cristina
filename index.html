@@ -1,1 +1,43 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nicolás y Cristina</title><link rel="stylesheet" href="styles.css"></head><body><div id="overlay"><h1>Nicolás & Cristina</h1><button onclick="start()">Entrar en la invitación</button></div><img src="portada.png" class="cover"><div class="buttons"><a href="https://www.google.com/maps/place/El+Rinc%C3%B3n+del+Acebuche/@37.4390364,-4.0922229,17z/data=!3m1!4b1!4m6!3m5!1s0xd6d92dfe737c93d:0x2a5fec467f6b97ff!8m2!3d37.4390364!4d-4.089648!16s%2Fg%2F11bymxssfl?entry=ttu" target="_blank">📍 Cómo llegar</a><a href="https://docs.google.com/forms/d/e/1FAIpQLScPqFMr7UycfCYbmq3-qp6iybEPPn9cbV5vwLEUVnmfY-rCZA/viewform" target="_blank">✅ Confirmar asistencia</a></div><audio id="m" src="musica.mp3" loop></audio><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nicolás y Cristina</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="overlay"><div class="welcome"><h1>Nicolás & Cristina</h1><p>Pulsa para entrar y escuchar nuestra canción.</p><button id="enter">Entrar en la invitación</button></div></div>
+
+<main id="main">
+<img class="cover" src="portada.png" alt="Invitación de Nicolás y Cristina">
+
+<section class="card date">
+<p class="kicker">Reserva la fecha</p>
+<h2>24 de octubre de 2026</h2>
+<p class="time">A las 13:00 h</p>
+</section>
+
+<section class="card">
+<p class="kicker">Faltan</p>
+<div class="countdown">
+<div><strong id="days">0</strong><span>Días</span></div>
+<div><strong id="hours">0</strong><span>Horas</span></div>
+<div><strong id="minutes">0</strong><span>Minutos</span></div>
+<div><strong id="seconds">0</strong><span>Segundos</span></div>
+</div>
+<p id="message"></p>
+</section>
+
+<section class="actions">
+<a href="https://www.google.com/maps/place/El+Rinc%C3%B3n+del+Acebuche/@37.4390364,-4.0922229,17z/data=!3m1!4b1!4m6!3m5!1s0xd6d92dfe737c93d:0x2a5fec467f6b97ff!8m2!3d37.4390364!4d-4.089648!16s%2Fg%2F11bymxssfl?entry=ttu" target="_blank"><b>📍 Cómo llegar</b><small>Ver ubicación en Google Maps</small></a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScPqFMr7UycfCYbmq3-qp6iybEPPn9cbV5vwLEUVnmfY-rCZA/viewform" target="_blank"><b>✅ Confirmar asistencia</b><small>Completar el formulario</small></a>
+<a href="https://forms.gle/eH8ekzRDkTPa1Evj9" target="_blank"><b>🎵 Sugiérenos una canción</b><small>Ayúdanos a crear la banda sonora</small></a>
+</section>
+
+<section class="card closing"><p>Nos hará muchísima ilusión compartir este día contigo.</p><h3>Nicolás & Cristina</h3></section>
+</main>
+
+<button id="music">⏸</button>
+<audio id="audio" src="musica.mp3" loop preload="auto"></audio>
+<script src="script.js"></script>
+</body></html>
