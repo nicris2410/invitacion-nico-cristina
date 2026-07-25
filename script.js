@@ -1,0 +1,1 @@
+function start(){document.getElementById('overlay').style.display='none';document.getElementById('m').play().catch(()=>{});}
