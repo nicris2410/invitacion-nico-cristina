@@ -13,10 +13,9 @@
 <body>
   <div id="welcome" class="welcome-screen">
     <div class="welcome-card">
-      <p class="eyebrow">Nicolás & Cristina</p>
-      <h1>Bienvenidos a nuestra invitación</h1>
-      <p>Pulsa para entrar y escuchar nuestra canción.</p>
-      <button id="enterBtn" class="primary-btn">Entrar en la invitación</button>
+      <h1>Nicolás & Cristina</h1>
+      <p class="welcome-date">24 de octubre de 2026</p>
+      <button id="enterBtn" class="primary-btn">Entra en tu invitación</button>
     </div>
   </div>
 
@@ -25,11 +24,15 @@
       <img src="portada.png" alt="Invitación de Nicolás y Cristina" class="cover-image">
     </section>
 
+    <div class="divider reveal"><span>❧</span></div>
+
     <section class="intro card reveal">
       <p>Después de compartir tantos recuerdos, sueños y aventuras, ha llegado el momento de dar un paso más en nuestro camino.</p>
       <p>Y nos hace muchísima ilusión que forméis parte de este día...</p>
       <p class="intro-final">Seguid bajando, os contamos todos los detalles.</p>
     </section>
+
+    <div class="divider reveal"><span>❧</span></div>
 
     <section class="date-section card reveal">
       <p class="section-kicker">Reserva la fecha</p>
@@ -37,23 +40,16 @@
       <p class="event-time">A las 13:00 h</p>
     </section>
 
-    <section class="countdown-section card reveal" aria-label="Cuenta atrás para la boda">
-      <p class="section-kicker">Faltan</p>
-      <div class="countdown">
-        <div><strong id="days">0</strong><span>Días</span></div>
-        <div><strong id="hours">0</strong><span>Horas</span></div>
-        <div><strong id="minutes">0</strong><span>Minutos</span></div>
-        <div><strong id="seconds">0</strong><span>Segundos</span></div>
-      </div>
-      <p id="countdownMessage" class="countdown-message"></p>
-    </section>
+    <div class="divider reveal"><span>❧</span></div>
 
     <section class="venue card reveal">
       <p class="section-kicker">El lugar</p>
       <h2>El Rincón del Acebuche</h2>
-      <p>Nos reuniremos allí para celebrar juntos uno de los días más especiales de nuestra historia.</p>
+      <p class="venue-city">Almedinilla (Córdoba)</p>
       <a class="outline-btn" href="https://www.google.com/maps/place/El+Rinc%C3%B3n+del+Acebuche/@37.4390364,-4.0922229,17z/data=!3m1!4b1!4m6!3m5!1s0xd6d92dfe737c93d:0x2a5fec467f6b97ff!8m2!3d37.4390364!4d-4.089648!16s%2Fg%2F11bymxssfl?entry=ttu" target="_blank" rel="noopener noreferrer">📍 Cómo llegar</a>
     </section>
+
+    <div class="divider reveal"><span>❧</span></div>
 
     <section class="timeline card reveal">
       <p class="section-kicker">Horario del día</p>
@@ -76,6 +72,8 @@
       </div>
     </section>
 
+    <div class="divider reveal"><span>❧</span></div>
+
     <section class="actions-section reveal">
       <a class="action-card" href="https://docs.google.com/forms/d/e/1FAIpQLScPqFMr7UycfCYbmq3-qp6iybEPPn9cbV5vwLEUVnmfY-rCZA/viewform" target="_blank" rel="noopener noreferrer">
         <span class="action-icon">✅</span>
@@ -88,16 +86,34 @@
       </a>
     </section>
 
+    <div class="divider reveal"><span>❧</span></div>
+
+    <section class="countdown-section card reveal" aria-label="Cuenta atrás para la boda">
+      <p class="section-kicker">Ya falta muy poco</p>
+      <div class="countdown">
+        <div><strong id="days">0</strong><span>Días</span></div>
+        <div><strong id="hours">0</strong><span>Horas</span></div>
+        <div><strong id="minutes">0</strong><span>Minutos</span></div>
+        <div><strong id="seconds">0</strong><span>Segundos</span></div>
+      </div>
+      <p id="countdownMessage" class="countdown-message"></p>
+    </section>
+
+    <div class="divider reveal"><span>❧</span></div>
+
     <section class="closing card reveal">
       <p>Cada historia de amor es única, pero todas tienen algo en común: las personas que las hacen inolvidables.</p>
       <p>Gracias por formar parte de la nuestra y por acompañarnos en uno de los días más importantes de nuestras vidas.</p>
+      <p class="see-you">Nos vemos el 24 de octubre de 2026.</p>
       <span class="signature">Nicolás & Cristina</span>
     </section>
   </main>
 
-  <button id="musicBtn" class="music-btn" aria-label="Pausar música" title="Pausar o reproducir música">
-    <span id="musicIcon">⏸</span>
-  </button>
+  <div id="musicBadge" class="music-badge">
+    <span class="music-note">♪</span>
+    <span class="music-text">Nuestra canción</span>
+    <button id="musicBtn" class="music-toggle" aria-label="Pausar música"><span id="musicIcon">⏸</span></button>
+  </div>
 
   <audio id="bgMusic" src="musica.mp3" loop preload="auto"></audio>
   <script src="script.js"></script>

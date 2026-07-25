@@ -2,6 +2,7 @@
 const welcome = document.getElementById("welcome");
 const invitation = document.getElementById("invitation");
 const enterBtn = document.getElementById("enterBtn");
+const musicBadge = document.getElementById("musicBadge");
 const musicBtn = document.getElementById("musicBtn");
 const musicIcon = document.getElementById("musicIcon");
 const bgMusic = document.getElementById("bgMusic");
@@ -17,7 +18,7 @@ enterBtn.addEventListener("click", async () => {
   welcome.classList.add("hidden");
   invitation.classList.add("visible");
   invitation.setAttribute("aria-hidden", "false");
-  musicBtn.classList.add("visible");
+  musicBadge.classList.add("visible");
   document.body.style.overflow = "auto";
   setTimeout(() => document.querySelector(".hero").classList.add("visible"), 150);
 });
@@ -63,6 +64,6 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) entry.target.classList.add("visible");
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.14 });
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
