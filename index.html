@@ -130,7 +130,7 @@
       </article>
     </section>
     <section class="travel-info reveal">
-      <details class="info-details">
+      <details class="info-details bus-details">
         <summary class="info-button">
           <span class="info-icon" aria-hidden="true">
             <svg viewBox="0 0 64 64">
@@ -142,25 +142,57 @@
             </svg>
           </span>
           <span class="info-label">
-            <strong>Información sobre autobuses</strong>
-            <small>Pulsa para desplegar</small>
+            <strong>Autobuses</strong>
+            <small>Horarios y puntos de salida</small>
           </span>
           <span class="info-toggle" aria-hidden="true">+</span>
         </summary>
-        <div class="info-content">
-<div class="bus-time"><strong>🕒 Hora de salida</strong><div class="time">12:00 h</div></div>
-<div class="bus-grid">
-<div class="bus-card">
-<h4>📍 Alcalá la Real</h4>
-<p><strong>San Antón</strong><br><em>Antigua parada de autobús</em></p>
-<a class="map-btn" href="https://www.google.com/maps/place/Iglesia+de+San+Ant%C3%B3n/@37.4616123,-3.9257231,17z/data=!3m2!4b1!5s0xd6def6c74628a73:0x7acb9c994e714cf2!4m6!3m5!1s0xd6def6c742335ad:0x18b2a03c502ff52b!8m2!3d37.4616123!4d-3.9231482!16s%2Fg%2F11dxs4srch?entry=ttu" target="_blank">📍 Abrir en Google Maps</a>
-</div>
-<div class="bus-card">
-<h4>📍 Priego de Córdoba</h4>
-<p><strong>Plaza Palenque</strong></p>
-<a class="map-btn" href="https://www.google.com/maps/place/Pl.+Palenque,+14800+Priego+de+C%C3%B3rdoba,+C%C3%B3rdoba/@37.4374833,-4.2002981,17z/data=!3m1!4b1!4m6!3m5!1s0xd6d90f8b3edb743:0x77638e4ae77a4c24!8m2!3d37.4374833!4d-4.1977232!16s%2Fg%2F11xndv9v4?entry=ttu" target="_blank">📍 Abrir en Google Maps</a>
-</div></div>
-</div>
+
+        <div class="info-content bus-content">
+          <div class="bus-time">
+            <span class="bus-time-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v5l3.2 1.9"/></svg>
+            </span>
+            <div>
+              <span class="bus-eyebrow">Hora de salida</span>
+              <div class="time">12:00 <small>h</small></div>
+            </div>
+          </div>
+
+          <div class="bus-route-label"><span></span>Elige tu punto de salida<span></span></div>
+
+          <div class="bus-grid">
+            <article class="bus-card">
+              <div class="bus-card-pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </div>
+              <div class="bus-card-copy">
+                <span class="bus-city">Alcalá la Real</span>
+                <h4>San Antón</h4>
+                <p>Antigua parada de autobús</p>
+              </div>
+              <a class="map-btn" href="https://www.google.com/maps/place/Iglesia+de+San+Ant%C3%B3n/@37.4616123,-3.9257231,17z/data=!3m2!4b1!5s0xd6def6c74628a73:0x7acb9c994e714cf2!4m6!3m5!1s0xd6def6c742335ad:0x18b2a03c502ff52b!8m2!3d37.4616123!4d-3.9231482!16s%2Fg%2F11dxs4srch?entry=ttu" target="_blank" rel="noopener noreferrer">
+                <span>Ver ubicación</span><span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <article class="bus-card">
+              <div class="bus-card-pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </div>
+              <div class="bus-card-copy">
+                <span class="bus-city">Priego de Córdoba</span>
+                <h4>Plaza Palenque</h4>
+                <p>Punto de recogida</p>
+              </div>
+              <a class="map-btn" href="https://www.google.com/maps/place/Pl.+Palenque,+14800+Priego+de+C%C3%B3rdoba,+C%C3%B3rdoba/@37.4374833,-4.2002981,17z/data=!3m1!4b1!4m6!3m5!1s0xd6d90f8b3edb743:0x77638e4ae77a4c24!8m2!3d37.4374833!4d-4.1977232!16s%2Fg%2F11xndv9v4?entry=ttu" target="_blank" rel="noopener noreferrer">
+                <span>Ver ubicación</span><span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+
+          <p class="bus-note">Os recomendamos estar en la parada unos minutos antes de la salida.</p>
+        </div>
       </details>
 
       <details class="info-details">
