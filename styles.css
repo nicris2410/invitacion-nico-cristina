@@ -509,3 +509,101 @@ h1,h2,h3,.signature{font-family:"Cormorant Garamond",serif}h1{margin:0 0 10px;fo
   .bus-details .info-label strong{font-size:1.3rem}
   .bus-time{padding-right:18px}
 }
+
+/* Autobuses — diagrama de salida simplificado */
+.bus-flow{
+  position:relative;
+  display:grid;
+  gap:18px;
+  max-width:690px;
+  margin:0 auto
+}
+.bus-flow::before{
+  content:"";
+  position:absolute;
+  left:122px;
+  top:38px;
+  bottom:38px;
+  width:1px;
+  background:linear-gradient(180deg,rgba(155,122,77,.08),rgba(155,122,77,.52),rgba(155,122,77,.08))
+}
+.bus-stop{
+  position:relative;
+  display:grid;
+  grid-template-columns:102px 40px minmax(0,1fr);
+  align-items:center
+}
+.bus-stop-time{
+  text-align:right;
+  color:#725329;
+  line-height:1
+}
+.bus-stop-time span{
+  display:block;
+  margin-bottom:4px;
+  color:#9b7a4d;
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase
+}
+.bus-stop-time strong{
+  font-family:"Cormorant Garamond",serif;
+  font-size:2rem;
+  font-weight:600
+}
+.bus-stop-time small{
+  margin-left:2px;
+  font-size:.68rem;
+  font-weight:700;
+  color:#9b7a4d
+}
+.bus-stop-dot{
+  position:relative;
+  z-index:2;
+  width:12px;
+  height:12px;
+  justify-self:center;
+  border:3px solid #f7f0e5;
+  border-radius:50%;
+  background:#8c9867;
+  box-shadow:0 0 0 1px rgba(111,125,79,.35)
+}
+.bus-stop-card{
+  padding:18px 20px;
+  border:1px solid rgba(155,122,77,.17);
+  border-radius:18px;
+  background:rgba(255,255,255,.72);
+  box-shadow:0 8px 20px rgba(58,45,30,.05)
+}
+.bus-stop-card h4{
+  margin:2px 0 4px;
+  color:#3f382f;
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.7rem;
+  font-weight:600;
+  line-height:1.05
+}
+.bus-stop-card p{
+  margin:0 0 12px;
+  color:#756d63;
+  font-size:.87rem;
+  line-height:1.45
+}
+.bus-stop-card .map-btn{
+  width:auto;
+  display:inline-flex;
+  margin-top:12px;
+  padding:9px 13px;
+  gap:18px
+}
+@media(max-width:620px){
+  .bus-flow{gap:16px}
+  .bus-flow::before{left:74px;top:33px;bottom:33px}
+  .bus-stop{grid-template-columns:58px 32px minmax(0,1fr)}
+  .bus-stop-time strong{font-size:1.55rem}
+  .bus-stop-time span{font-size:.55rem;letter-spacing:.08em}
+  .bus-stop-time small{font-size:.6rem}
+  .bus-stop-card{padding:16px}
+  .bus-stop-card h4{font-size:1.5rem}
+}
